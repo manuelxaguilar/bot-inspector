@@ -1,0 +1,27 @@
+{
+  "name": "bot-inspector",
+  "version": "1.0.0",
+  "description": "Simple node user-agent inspector that detects bot requests",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuelxaguilar/bot-inspector.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "bot-inspector"
+  ],
+  "author": "Manuel Aguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manuelxaguilar/bot-inspector/issues"
+  },
+  "homepage": "https://github.com/manuelxaguilar/bot-inspector#readme"
+}
