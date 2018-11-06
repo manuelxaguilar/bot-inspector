@@ -1,1 +1,1 @@
-module.exports = require('./lib/BotInspector')
+module.exports = require('./lib/BotInspector');
