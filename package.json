@@ -1,6 +1,6 @@
 {
   "name": "bot-inspector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple node user-agent inspector that detects bot requests",
   "main": "index.js",
   "directories": {
