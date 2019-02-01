@@ -38,7 +38,15 @@ test('Should return a modified crawlers list if a string is passed', () => {
 });
 
 test('Should fail if a type other than array or string are sent as parameters', () => {
-  expect(() => { getCrawlerList(123) }).toThrow(TypeError);
-  expect(() => { getCrawlerList({ test: 'should fail' }) }).toThrow(TypeError);
-  expect(() => { getCrawlerList(true) }).toThrow(TypeError);
+  expect(() => {
+    getCrawlerList(123);
+  }).toThrow(TypeError);
+
+  expect(() => {
+    getCrawlerList({ test: 'should fail' });
+  }).toThrow(TypeError);
+
+  expect(() => {
+    getCrawlerList(true);
+  }).toThrow(TypeError);
 });
