@@ -16,7 +16,10 @@
   "keywords": [
     "npm",
     "node",
-    "bot-inspector"
+    "bot-inspector",
+    "user-agent",
+    "googlebot",
+    "seo"
   ],
   "author": "Manuel Aguilar",
   "license": "ISC",
