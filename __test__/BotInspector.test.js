@@ -22,6 +22,32 @@ test('Should return a function an object with a function named "isCrawler" when 
   expect(inspector).toMatchObject(responseObject);
 });
 
+test('Should call console.error once if incorrect arguments are passed in', () => {
+  const spy = jest.spyOn(global.console, 'error');
+
+  console.log('***Expected error***');
+  BotInspector({
+    customCrawlers: true
+  });
+
+  expect(spy).toHaveBeenCalledTimes(1);
+});
+
+test('Should call console.error twice if incorrect arguments are passed in and isCrawler is called', () => {
+  console.error.mockClear();
+
+  const spy = jest.spyOn(global.console, 'error');
+  console.log('***Expected error***');
+  const inspector = BotInspector({
+    customCrawlers: true
+  });
+
+  console.log('***Expected error***');
+  inspector.isCrawler();
+
+  expect(spy).toHaveBeenCalledTimes(2);
+});
+
 test('Should return "true" when "isCrawler" is called after instantiating BotInspector with the correct parameters and the "user-agent" is a bot', () => {
   const inspector = BotInspector({
     customCrawlers: ['bot'],
