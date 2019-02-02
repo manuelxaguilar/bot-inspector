@@ -46,6 +46,8 @@ function example(req, res) {
 ## TODO
 - Add some more tests that are missing
 - Better documentation
+- Add bot exclusions
+- Add method to return which bot is calling
 
 ## Support
 
