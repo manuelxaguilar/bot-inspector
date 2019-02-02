@@ -1,6 +1,6 @@
 {
   "name": "bot-inspector",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple node user-agent inspector that detects bot requests",
   "main": "index.js",
   "directories": {
@@ -16,7 +16,10 @@
   "keywords": [
     "npm",
     "node",
-    "bot-inspector"
+    "bot-inspector",
+    "user-agent",
+    "googlebot",
+    "seo"
   ],
   "author": "Manuel Aguilar",
   "license": "ISC",
